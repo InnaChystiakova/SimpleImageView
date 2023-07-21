@@ -43,6 +43,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         scrollView.delegate = self
         scrollView.backgroundColor = .systemOrange
         scrollView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        scrollView.contentInsetAdjustmentBehavior = .never
+        scrollView.automaticallyAdjustsScrollIndicatorInsets = false
         
         view.addSubview(scrollView)
     }

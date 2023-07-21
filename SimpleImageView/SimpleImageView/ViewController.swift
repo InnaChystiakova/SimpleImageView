@@ -41,6 +41,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     func setupScrollView() {
         scrollView.delegate = self
+        scrollView.backgroundColor = .systemOrange
         scrollView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         view.addSubview(scrollView)
